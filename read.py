@@ -1,3 +1,4 @@
+##### Version 0
 from imapclient import IMAPClient
 from datetime  import date
 import openpyxl
@@ -21,6 +22,7 @@ def indirizzo( par ):
 
 imaplib._MAXLINE=10000000
 
+print('Connecting to email account')
 server=IMAPClient('mail.esss.lu.se', ssl=True, use_uid=True)
 username = 'paolopierini'
 p=getpass.getpass()
