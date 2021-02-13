@@ -1,4 +1,4 @@
-##### Version 0
+##### Version 1
 from imapclient import IMAPClient
 from datetime  import date
 import openpyxl
@@ -27,6 +27,7 @@ print('Connecting to email account')
 server=IMAPClient('mail.esss.lu.se', ssl=True, use_uid=True)
 username = 'paolopierini'
 p=getpass.getpass()
+print('Now I login')
 server.login(username,p)
 folders=server.list_folders()
 
